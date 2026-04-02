@@ -85,7 +85,6 @@ export function Controls({
           >
             <option value="bottomEdge">Classic Bottom-Edge</option>
             <option value="topEdge">Top-Edge</option>
-            <option value="wideCliff">Wide Cliff (2-row)</option>
           </select>
         </div>
         <Slider label="Rows" min={3} max={8}  step={1} value={params.rows}

@@ -27,15 +27,6 @@ export function makeWorld(type, rows, cols, customCliff = null) {
         cliffR1: 0, cliffC1: 1, cliffR2: 0, cliffC2: cols - 2,
       };
       break;
-    case 'wideCliff':
-      base = {
-        name: `Wide-cliff (2-row) ${rows}×${cols}`,
-        type, rows, cols,
-        start: [rows - 1, 0],
-        goal:  [rows - 1, cols - 1],
-        cliffR1: rows - 2, cliffC1: 1, cliffR2: rows - 1, cliffC2: cols - 2,
-      };
-      break;
     case 'bottomEdge':
     default:
       base = {
